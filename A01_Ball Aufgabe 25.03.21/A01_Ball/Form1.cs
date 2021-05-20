@@ -15,12 +15,10 @@ using System.Windows.Forms;
 
 namespace Ball
 {
+	//Hallo Haollo
     public partial class Form1 : Form
     {
-        private Bitmap hinterbmp;	//Handle für Hintergrund, der im Konstruktor geladen wird.
-	    private Bitmap anzeige;
-	    private int x,y;    //Koordinaten des Balls
-		private int speed = 15; 
+      Console.WriteLine"Meine Änderung"
 
         public Form1()
         {
