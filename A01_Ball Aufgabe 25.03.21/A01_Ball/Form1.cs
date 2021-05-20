@@ -17,25 +17,6 @@ namespace Ball
 {
     public partial class Form1 : Form
     {
-        private Bitmap hinterbmp;	//Handle für Hintergrund, der im Konstruktor geladen wird.
-	    private Bitmap anzeige;
-	    private int x,y;    //Koordinaten des Balls
-		private int speed = 15; 
-
-        public Form1()
-        {
-
-			InitializeComponent();
-			hinterbmp =new Bitmap("wasser.bmp"); //Hintergrundbild laden (liegt in bin\Debug\... bei der exe)
-			anzeige =new Bitmap(hinterbmp.Width,hinterbmp.Height);
-			//pictureBox1.ClientSize=hinterbmp.Size; // Größe der PictureBox an die Größe des Hintergrunds anpassen
-			//pictureBox1.Image=hinterbmp;	//Hintergrund anzeigen lassen
-			x=hinterbmp.Width/2;			//Der Ball startet in der Bildmitte
-			y=hinterbmp.Height/2;
-			DoubleBuffered=true;	//"Flimmerschutz", steht hier nur, damit es nicht vergessen wird.
-									// Wird in der Regel mit Designer voreingestellt
-		  
-        }
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
